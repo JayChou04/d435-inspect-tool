@@ -1,0 +1,14 @@
+# Python environment and tools created by run-mac.sh / run-linux.sh
+.venv/
+.uv/
+__pycache__/
+*.pyc
+
+# Created at runtime: firmware images and flash backups, snapshots, reports, logs
+firmware/
+snapshots/
+report*.json
+*.log
+
+# OS files
+.DS_Store

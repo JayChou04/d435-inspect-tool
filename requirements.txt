@@ -1,0 +1,8 @@
+# librealsense 2.56.5 on both platforms: firmware_update.py knows the SHA-1 of the firmware it recommends.
+# Intel publishes no macOS wheel; pyrealsense2-macosx is the community build (Apple Silicon only).
+pyrealsense2-macosx==2.56.5 ; sys_platform == "darwin"
+# Linux wheels: x86_64 for Python 3.9-3.13, aarch64 (Jetson etc.) for Python 3.9-3.10.
+pyrealsense2==2.56.5.9235 ; sys_platform == "linux"
+# Ranges, not pins, so Python 3.9-3.13 all resolve (tested on macOS: numpy 2.5.4, opencv-python 5.0.0.93).
+opencv-python>=4.8
+numpy>=1.24
